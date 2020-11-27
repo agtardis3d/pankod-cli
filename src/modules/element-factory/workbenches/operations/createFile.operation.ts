@@ -9,5 +9,5 @@ import { failsafe } from '.';
 
 export const createFile = (dirPath: string): void => {
     failsafe(dirPath);
-    fs.mkdirSync(path.resolve('', dirPath));
+    fs.mkdirSync(path.resolve('', dirPath), { recursive: true });
 };
