@@ -15,7 +15,7 @@ export const validate = (
     fileType: string
 ): string | boolean => {
     if (val.length) {
-        if (!val.match(/^[^\W_]+$/gi)) {
+        if (!val.match(/^[\w_]+(\/[\w_]+)*$/gi)) {
             return red('Special characters and spaces are NOT allowed!');
         } else if (isAlreadyExist(dirPath, val, isFile, fileType)) {
             return red(
