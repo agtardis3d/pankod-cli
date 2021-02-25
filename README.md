@@ -16,11 +16,11 @@ Save a lot of time by generating services, components, tests for Pankod Boilerpl
 
 <!-- usage -->
 ```sh-session
-$ npm install -g @pankod/pankod-cli
+$ npm install -g agtardis3d-pankod-cli
 $ pankod-cli COMMAND
 running command...
 $ pankod-cli (-v|--version|version)
-@pankod/pankod-cli/1.0.5 darwin-x64 node-v14.15.5
+agtardis3d-pankod-cli/1.0.5 darwin-x64 node-v14.15.5
 $ pankod-cli --help [COMMAND]
 USAGE
   $ pankod-cli COMMAND

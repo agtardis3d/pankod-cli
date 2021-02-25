@@ -7,7 +7,7 @@ export const nextjs2: INextjs2Questions = {
     Page: [
         questions.implementation,
         questions.enterPageName,
-        questions.customPath,
+        // questions.customPath,
         questions.enterRouteName,
         questions.connectStore,
         questions.isHaveReducer,
