@@ -39,7 +39,7 @@ export const createFuncComponent = (options: ICommon.IAnswers): void => {
             routesTemplate: nextjs2.templates.addRouteTemplate
         };
 
-        addRoute(options, addRouteParams);
+        // addRoute(options, addRouteParams);
     } else {
         options.funcComponentDir = `${nextjs2.componentsDir}/${options.fileName}`;
 
