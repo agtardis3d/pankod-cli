@@ -20,7 +20,7 @@ $ npm install -g @pankod/pankod-cli
 $ pankod-cli COMMAND
 running command...
 $ pankod-cli (-v|--version|version)
-@pankod/pankod-cli/1.0.1 darwin-x64 node-v10.20.1
+@pankod/pankod-cli/1.0.5 darwin-x64 node-v14.15.5
 $ pankod-cli --help [COMMAND]
 USAGE
   $ pankod-cli COMMAND
@@ -46,7 +46,7 @@ USAGE
   $ pankod-cli add Service
 ```
 
-_See code: [src/commands/add/index.ts](https://github.com/Pankod/pankod-cli/blob/v1.0.1/src/commands/add/index.ts)_
+_See code: [src/commands/add/index.ts](https://github.com/Pankod/pankod-cli/blob/v1.0.5/src/commands/add/index.ts)_
 
 ## `pankod-cli help [COMMAND]`
 
@@ -63,7 +63,7 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3/src/commands/help.ts)_
 <!-- commandsstop -->
 # :package: Elements
 

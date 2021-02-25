@@ -1,7 +1,7 @@
 {
-    "name": "@pankod/pankod-cli",
+    "name": "agtardis3d-pankod-cli",
     "description": "Save a lot of time by generating services, components, tests for Pankod Boilerplate projects",
-    "version": "1.0.1",
+    "version": "1.0.5",
     "author": "Pankod <info@pankod.com>",
     "scripts": {
         "start": "npm pack && npm link",
@@ -63,7 +63,7 @@
         "/npm-shrinkwrap.json",
         "/oclif.manifest.json"
     ],
-    "homepage": "https://github.com/pankod/pankod-cli",
+    "homepage": "https://github.com/agtardis3d/pankod-cli",
     "keywords": [
         "pankod",
         "cli",
