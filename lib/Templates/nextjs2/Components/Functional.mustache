@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 // #region Local Imports
 {{#isPage}}
-import { withTranslation } from "i18n";
+import { useTranslation } from "next-i18next";
 {{/isPage}}
 {{#isConnectStore}}
 import { IStore } from "@Redux/IStore";
@@ -33,7 +33,7 @@ import { Container } from "./styled";
 
 // #region Interface Imports
 {{#isPage}}
-import { ReduxNextPageContext, {{interfaceName}} } from "@Interfaces";
+import { {{interfaceName}} } from "@Interfaces";
 {{/isPage}}
 {{^isPage}}
 import { {{interfaceName}} } from "./{{upperFileName}}";
@@ -41,16 +41,16 @@ import { {{interfaceName}} } from "./{{upperFileName}}";
 // #endregion Interface Imports
 
 {{#isPage}}
-export const {{upperFileName}}: NextPage<
-    {{interfaceName}}.IProps,
-    {{interfaceName}}.InitialProps
-> = ({ t, i18n }) => {
+export const {{upperFileName}}: NextPage<{{interfaceName}}.IProps> = ({}) => {
 {{/isPage}}
 {{^isPage}}
 export const {{upperFileName}}: React.FunctionComponent<
     {{interfaceName}}.IProps
 > = (props: {{interfaceName}}.IProps) => {
 {{/isPage}}
+    {{#isPage}}
+    const { t } = useTranslation(["common"]);
+    {{/isPage}}
     {{#isConnectStore}}
     const {{lowerFileName}} = useSelector((state: IStore) => state.{{lowerFileName}});
     const dispatch = useDispatch();
@@ -71,12 +71,17 @@ export const {{upperFileName}}: React.FunctionComponent<
 };
 
 {{#isPage}}
-{{upperFileName}}.getInitialProps = async (
-    ctx: ReduxNextPageContext
-): Promise<{{interfaceName}}.InitialProps> => {
-
-    return { namespacesRequired: ["common"] };
+export const getStaticProps: GetStaticProps<{{interfaceName}}.IProps> = async ctx => {
+    const props: {{interfaceName}}.IProps = {
+        ...(await serverSideTranslations(ctx.locale as string, [
+            "common",
+        ])),
+    };
+    return {
+        props,
+    };
 };
 
-export default withTranslation("common")({{upperFileName}});
+
+export default {{upperFileName}};
 {{/isPage}}

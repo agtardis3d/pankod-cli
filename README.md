@@ -1,4 +1,4 @@
-@pankod/pankod-cli
+agtardis3d-pankod-cli
 ==================
 
 <p align="center">
@@ -17,44 +17,44 @@ Save a lot of time by generating services, components, tests for Pankod Boilerpl
 <!-- usage -->
 ```sh-session
 $ npm install -g agtardis3d-pankod-cli
-$ pankod-cli COMMAND
+$ agtardis3d-pankod-cli COMMAND
 running command...
-$ pankod-cli (-v|--version|version)
-agtardis3d-pankod-cli/1.0.6 darwin-x64 node-v14.15.5
-$ pankod-cli --help [COMMAND]
+$ agtardis3d-pankod-cli (-v|--version|version)
+agtardis3d-pankod-cli/1.0.8 darwin-x64 node-v14.15.5
+$ agtardis3d-pankod-cli --help [COMMAND]
 USAGE
-  $ pankod-cli COMMAND
+  $ agtardis3d-pankod-cli COMMAND
 ...
 ```
 <!-- usagestop -->
 <!-- commands -->
-* [`pankod-cli add Page`](#pankod-cli-add-page)
-* [`pankod-cli help [COMMAND]`](#pankod-cli-help-command)
+* [`agtardis3d-pankod-cli add Page`](#pankod-cli-add-page)
+* [`agtardis3d-pankod-cli help [COMMAND]`](#pankod-cli-help-command)
 
-## `pankod-cli add Page`
+## `agtardis3d-pankod-cli add Page`
 
 Add services, components and more...
 
 ```
 USAGE
-  $ pankod-cli add Page
-  $ pankod-cli add Component
-  $ pankod-cli add ClassComponent
-  $ pankod-cli add FunctionalComponent
-  $ pankod-cli add Plugin
-  $ pankod-cli add Repository
-  $ pankod-cli add Service
+  $ agtardis3d-pankod-cli add Page
+  $ agtardis3d-pankod-cli add Component
+  $ agtardis3d-pankod-cli add ClassComponent
+  $ agtardis3d-pankod-cli add FunctionalComponent
+  $ agtardis3d-pankod-cli add Plugin
+  $ agtardis3d-pankod-cli add Repository
+  $ agtardis3d-pankod-cli add Service
 ```
 
-_See code: [src/commands/add/index.ts](https://github.com/Pankod/pankod-cli/blob/v1.0.6/src/commands/add/index.ts)_
+_See code: [src/commands/add/index.ts](https://github.com/Pankod/pankod-cli/blob/v1.0.7/src/commands/add/index.ts)_
 
-## `pankod-cli help [COMMAND]`
+## `agtardis3d-pankod-cli help [COMMAND]`
 
 display help for pankod-cli
 
 ```
 USAGE
-  $ pankod-cli help [COMMAND]
+  $ agtardis3d-pankod-cli help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -67,26 +67,26 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3
 <!-- commandsstop -->
 # :package: Elements
 
-### `pankod-cli add <element>`
+### `agtardis3d-pankod-cli add <element>`
 
 Add services, components and more...
 
 ```sh
   # nextjs2
-  $ pankod-cli add Page
-  $ pankod-cli add Component
+  $ agtardis3d-pankod-cli add Page
+  $ agtardis3d-pankod-cli add Component
 
   # nextjs
-  $ pankod-cli add Page
-  $ pankod-cli add ClassComponent
-  $ pankod-cli add FunctionalComponent
+  $ agtardis3d-pankod-cli add Page
+  $ agtardis3d-pankod-cli add ClassComponent
+  $ agtardis3d-pankod-cli add FunctionalComponent
 
   # moleculer  
-  $ pankod-cli add Service
-  $ pankod-cli add Repository
+  $ agtardis3d-pankod-cli add Service
+  $ agtardis3d-pankod-cli add Repository
 
   # svelte
-  $ pankod-cli add Component
+  $ agtardis3d-pankod-cli add Component
 ```
 
 _See code: [src/commands/add](https://github.com/Pankod/pankod-cli/blob/v0.3.3/src/commands/add/index.ts)_
