@@ -46,7 +46,7 @@ USAGE
   $ agtardis3d-pankod-cli add Service
 ```
 
-_See code: [src/commands/add/index.ts](https://github.com/Pankod/pankod-cli/blob/v1.0.7/src/commands/add/index.ts)_
+_See code: [src/commands/add/index.ts](https://github.com/Pankod/pankod-cli/blob/v1.0.8/src/commands/add/index.ts)_
 
 ## `agtardis3d-pankod-cli help [COMMAND]`
 
