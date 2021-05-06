@@ -1,7 +1,7 @@
 {
     "name": "agtardis3d-pankod-cli",
     "description": "Save a lot of time by generating services, components, tests for Pankod Boilerplate projects",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "author": "Pankod <info@pankod.com>",
     "scripts": {
         "start": "npm pack && npm link",
